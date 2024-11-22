@@ -1,0 +1,86 @@
+
+Potato Questionnaire
+
+1. What type of potatoes do you prefer to eat?
+    - Russet
+    - Yukon Gold
+    - Red
+    - Fingerling
+    - Other (please specify)
+
+2. How often do you consume potatoes in a week?
+    - 1-2 times
+    - 3-4 times
+    - 5+ times
+    - Rarely
+
+3. What is your preferred method of preparing potatoes?
+    - Boiled
+    - Mashed
+    - Fried
+    - Baked
+    - Roasted
+    - Other (please specify)
+
+4. Do you grow potatoes at home?
+    - Yes
+    - No
+
+5. What variety of potatoes do you grow or wish to grow?
+    - Russet
+    - Red
+    - Sweet potatoes
+    - Other (please specify)
+
+6. What do you think is the most important factor in potato cultivation?
+    - Soil quality
+    - Weather conditions
+    - Watering schedule
+    - Pest control
+    - Other (please specify)
+
+7. Do you purchase organic potatoes?
+    - Yes, always
+    - Sometimes
+    - No, never
+
+8. Do you prefer small or large potatoes?
+    - Small
+    - Medium
+    - Large
+
+9. What is your favorite potato dish?
+    - French fries
+    - Potato salad
+    - Baked potato
+    - Potato chips
+    - Other (please specify)
+
+10. How important is the potato’s skin color to you when purchasing?
+    - Very important
+    - Somewhat important
+    - Not important
+
+11. Have you ever tried sweet potatoes?
+    - Yes
+    - No
+
+12. What is your preferred potato storage method?
+    - In a cool, dry place
+    - In the refrigerator
+    - I do not store potatoes
+
+13. Do you think potatoes are a healthy food option?
+    - Yes
+    - No
+    - Depends on how they are prepared
+
+14. Have you experienced any difficulties while growing potatoes?
+    - Yes (please specify)
+    - No
+
+15. What’s the biggest factor that influences your potato purchase?
+    - Price
+    - Quality
+    - Availability
+    - Brand reputation
