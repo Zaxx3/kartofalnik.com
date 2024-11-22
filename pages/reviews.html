@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Kartofelnik</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Картофалник.com</h1>
+        <nav>
+        <a href="index.html" class="nav-button">Начало</a>
+        
+        <a href="reviews.html" class="nav-button">Ревюта</a>
+       
+    </nav>
+</header>
+<main class="review-main">
+    <div class="review-title">
+        <h2>Ако имате препоръки или просто искате да изкажете мнение може да го направите тук 😊</h2>
+    </div>
+    <div class="reviews-holder">
+        <div class="input-form">
+
+        
+        <p>Вашето име</p>
+        <input type="text" id="username">
+        <p>Коментар</p>
+        <textarea id="commentTextArea" ></textarea>
+        <button onclick="submitComment()">Коментирай</button>
+        <button onclick="deleateComment()">Изтрии ВСИЧКИ коментари</button>
+    </div>
+    <div class="comment-area">
+
+    </div>
+    </div>
+
+
+
+</main>
+<footer>
+    <p>Kartofalnik.com ® 2024</p>
+</footer>
+    
+</body>
+
+<script>
+
+    function submitComment(){
+
+        const username = document.getElementById('username').value;
+        const commentTxt = document.getElementById('commentTextArea').value;
+
+        if (!username || !commentTxt) {
+        alert("Моля, попълнете и двете полета!"); // Alert user if any field is empty
+        return; // Stop the function if validation fails
+    }
+
+        let commentsStorage = JSON.parse(localStorage.getItem('comments')) || [];
+        commentsStorage.push({name: username, comment: commentTxt});
+        localStorage.setItem('comments', JSON.stringify(commentsStorage));
+
+        showComments()
+
+    }
+    function deleateComment() {
+    // Display confirmation alert before deleting
+    const isConfirmed = confirm("Сигурни ли сте, че искате да изтриете всички коментари?");
+    
+    if (isConfirmed) {
+        // Clear comments from localStorage
+        localStorage.removeItem('comments');
+
+        // Show the comment area (which will be empty now)
+        showComments();
+    }
+}
+
+    function showComments() {
+
+        const commentArea = document.querySelector(".comment-area");
+        const comments = JSON.parse(localStorage.getItem('comments'))||[];
+
+        commentArea.innerHTML = '';
+
+        comments.forEach((comment, index)=>{
+            const commentDiv = document.createElement('div');
+            commentDiv.classList.add('comment');
+            commentDiv.innerHTML = `<strong>${comment.name}:</strong><p> ${comment.comment}</p>`;
+            commentArea.appendChild(commentDiv);
+        });
+        
+    }
+
+    window.onload = function () {
+        showComments();
+    }
+
+</script>
+
+
+</html>
